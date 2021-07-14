@@ -42,6 +42,7 @@ public class DataBinderDemo {
         // 1. 创建 DataBinder
         DataBinder binder = new DataBinder(user, "");
 
+
         // 2. 创建 PropertyValues
         Map<String, Object> source = new HashMap<>();
         source.put("id", 1);
@@ -81,6 +82,8 @@ public class DataBinderDemo {
         // 4. 获取绑定结果（结果包含错误文案 code，不会抛出异常）
         BindingResult result = binder.getBindingResult();
         System.out.println(result);
+
+        System.out.println("test");
     }
 
 }
